@@ -1,0 +1,1801 @@
+-- GUI to Lua 
+-- Version: 0.0.3
+
+-- Instances:
+local lp = game.Players.LocalPlayer
+local animchangerdraft = Instance.new("ScreenGui")
+local main_1 = Instance.new("Frame")
+local changer_1 = Instance.new("Frame")
+local UICorner_1 = Instance.new("UICorner")
+local UIGradient_1 = Instance.new("UIGradient")
+local UIStroke_1 = Instance.new("UIStroke")
+local label_1 = Instance.new("TextLabel")
+local div_1 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local mini_1 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIStroke_2 = Instance.new("UIStroke")
+local anims_1 = Instance.new("Frame")
+local ScrollingFrame_1 = Instance.new("ScrollingFrame")
+local astro_1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_3 = Instance.new("UIStroke")
+local UIGridLayout_1 = Instance.new("UIGridLayout")
+local bubbly_1 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIStroke_4 = Instance.new("UIStroke")
+local cart_1 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke_5 = Instance.new("UIStroke")
+local elder_1 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIStroke_6 = Instance.new("UIStroke")
+local knight_1 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIStroke_7 = Instance.new("UIStroke")
+local lev_1 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIStroke_8 = Instance.new("UIStroke")
+local mage_1 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIStroke_9 = Instance.new("UIStroke")
+local ninja_1 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIStroke_10 = Instance.new("UIStroke")
+local pirate_1 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIStroke_11 = Instance.new("UIStroke")
+local robot_1 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIStroke_12 = Instance.new("UIStroke")
+local styl_1 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIStroke_13 = Instance.new("UIStroke")
+local hero_1 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIStroke_14 = Instance.new("UIStroke")
+local patrol_1 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIStroke_15 = Instance.new("UIStroke")
+local confident_1 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIStroke_16 = Instance.new("UIStroke")
+local pop_1 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UIStroke_17 = Instance.new("UIStroke")
+local cowboy_1 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local UIStroke_18 = Instance.new("UIStroke")
+local ghost_1 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UIStroke_19 = Instance.new("UIStroke")
+local sneaky_1 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local UIStroke_20 = Instance.new("UIStroke")
+local princess_1 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UIStroke_21 = Instance.new("UIStroke")
+local custom_1 = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local UIStroke_22 = Instance.new("UIStroke")
+local none_1 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local UIStroke_23 = Instance.new("UIStroke")
+local toy_1 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local UIStroke_24 = Instance.new("UIStroke")
+local vampire_1 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UIStroke_25 = Instance.new("UIStroke")
+local Werewolf_1 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UIStroke_26 = Instance.new("UIStroke")
+local zombie_1 = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIStroke_27 = Instance.new("UIStroke")
+local auto_1 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local UIStroke_28 = Instance.new("UIStroke")
+local current_1 = Instance.new("TextLabel")
+local state_1 = Instance.new("TextLabel")
+local open_custom_menu_1 = Instance.new("ImageButton")
+local custom_menu_1 = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIStroke_29 = Instance.new("UIStroke")
+local label_2 = Instance.new("TextLabel")
+local div_2 = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local Frame_1 = Instance.new("Frame")
+local UIListLayout_1 = Instance.new("UIListLayout")
+local idle1_1 = Instance.new("TextBox")
+local UICorner_32 = Instance.new("UICorner")
+local UIStroke_30 = Instance.new("UIStroke")
+local idle2_1 = Instance.new("TextBox")
+local UICorner_33 = Instance.new("UICorner")
+local UIStroke_31 = Instance.new("UIStroke")
+local walk_1 = Instance.new("TextBox")
+local UICorner_34 = Instance.new("UICorner")
+local UIStroke_32 = Instance.new("UIStroke")
+local run_1 = Instance.new("TextBox")
+local UICorner_35 = Instance.new("UICorner")
+local UIStroke_33 = Instance.new("UIStroke")
+local jump_1 = Instance.new("TextBox")
+local UICorner_36 = Instance.new("UICorner")
+local UIStroke_34 = Instance.new("UIStroke")
+local climb_1 = Instance.new("TextBox")
+local UICorner_37 = Instance.new("UICorner")
+local UIStroke_35 = Instance.new("UIStroke")
+local fall_1 = Instance.new("TextBox")
+local UICorner_38 = Instance.new("UICorner")
+local UIStroke_36 = Instance.new("UIStroke")
+local Animate = game.Players.LocalPlayer.Character.Animate
+local aa = false
+local currentAnim = 'Default'
+
+-- Properties:
+animchangerdraft.Name = "animchangerdraft"
+animchangerdraft.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+animchangerdraft.DisplayOrder = 2
+animchangerdraft.ResetOnSpawn = false
+
+main_1.Name = "main"
+main_1.Parent = animchangerdraft
+main_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+main_1.BackgroundTransparency = 1
+main_1.BorderColor3 = Color3.fromRGB(0,0,0)
+main_1.BorderSizePixel = 0
+main_1.Position = UDim2.new(0.0893697068, 0,0.227347642, 0)
+main_1.Size = UDim2.new(0, 698,0, 333)
+local ac_opened = true
+changer_1.Name = "changer"
+changer_1.Parent = main_1
+changer_1.Active = true
+changer_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+changer_1.BackgroundTransparency = 0.20000000298023224
+changer_1.BorderColor3 = Color3.fromRGB(0,0,0)
+changer_1.BorderSizePixel = 0
+changer_1.Position = UDim2.new(0.289673626, 0,0.050314676, 0)
+changer_1.Size = UDim2.new(0, 467,0, 295)
+changer_1.ClipsDescendants = true
+
+local dragch = Instance.new("UIDragDetector", changer_1)
+dragch.DragStyle = Enum.UIDragDetectorDragStyle.TranslatePlane
+
+UICorner_1.Parent = changer_1
+UICorner_1.CornerRadius = UDim.new(0,10)
+
+UIGradient_1.Parent = changer_1
+UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(140, 0, 255))}
+UIGradient_1.Offset = Vector2.new(0, 1)
+UIGradient_1.Rotation = 36
+
+UIStroke_1.Parent = changer_1
+UIStroke_1.Color = Color3.fromRGB(162,0,255)
+UIStroke_1.Thickness = 2.9000000953674316
+
+label_1.Name = "label"
+label_1.Parent = changer_1
+label_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+label_1.BackgroundTransparency = 1
+label_1.BorderColor3 = Color3.fromRGB(0,0,0)
+label_1.BorderSizePixel = 0
+label_1.Position = UDim2.new(0.0256959312, 0,0, 0)
+label_1.Size = UDim2.new(0, 396,0, 27)
+label_1.Font = Enum.Font.SourceSans
+label_1.Text = "Animation Changer"
+label_1.TextColor3 = Color3.fromRGB(255,255,255)
+label_1.TextSize = 14
+label_1.TextXAlignment = Enum.TextXAlignment.Left
+
+div_1.Name = "div"
+div_1.Parent = changer_1
+div_1.BackgroundColor3 = Color3.fromRGB(31,0,43)
+div_1.BackgroundTransparency = 0.800000011920929
+div_1.BorderColor3 = Color3.fromRGB(0,0,0)
+div_1.BorderSizePixel = 0
+div_1.Size = UDim2.new(0, 467,0, 28)
+div_1.ClipsDescendants = true
+
+UICorner_2.Parent = div_1
+
+mini_1.Name = "mini"
+mini_1.Parent = changer_1
+mini_1.Active = true
+mini_1.BackgroundColor3 = Color3.fromRGB(69,24,109)
+mini_1.BorderColor3 = Color3.fromRGB(0,0,0)
+mini_1.BorderSizePixel = 0
+mini_1.Position = UDim2.new(0.931477487, 0,0.0135593219, 0)
+mini_1.Size = UDim2.new(0, 25,0, 20)
+mini_1.Font = Enum.Font.SourceSans
+mini_1.Text = "-"
+mini_1.TextColor3 = Color3.fromRGB(255,255,255)
+mini_1.TextScaled = true
+mini_1.TextSize = 14
+mini_1.TextWrapped = true
+
+UICorner_3.Parent = mini_1
+
+UIStroke_2.Parent = mini_1
+UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_2.Color = Color3.fromRGB(162,0,255)
+UIStroke_2.Thickness = 2.0999999046325684
+
+anims_1.Name = "anims"
+anims_1.Parent = changer_1
+anims_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+anims_1.BackgroundTransparency = 1
+anims_1.BorderColor3 = Color3.fromRGB(0,0,0)
+anims_1.BorderSizePixel = 0
+anims_1.Position = UDim2.new(0.0659999773, 0,0.0949152559, 0)
+anims_1.Size = UDim2.new(0, 405,0, 211)
+anims_1.ClipsDescendants = true
+
+ScrollingFrame_1.Name = "ScrollingFrame"
+ScrollingFrame_1.Parent = anims_1
+ScrollingFrame_1.Active = true
+ScrollingFrame_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScrollingFrame_1.BackgroundTransparency = 1
+ScrollingFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ScrollingFrame_1.BorderSizePixel = 0
+ScrollingFrame_1.Position = UDim2.new(0, 0,0, 10)
+ScrollingFrame_1.Size = UDim2.new(0, 405,0, 174)
+ScrollingFrame_1.AutomaticCanvasSize = Enum.AutomaticSize.None
+ScrollingFrame_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+ScrollingFrame_1.CanvasPosition = Vector2.new(0, 0)
+ScrollingFrame_1.CanvasSize = UDim2.new(0, 0,3.1099999, 0)
+ScrollingFrame_1.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+ScrollingFrame_1.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame_1.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+ScrollingFrame_1.ScrollBarImageColor3 = Color3.fromRGB(0,0,0)
+ScrollingFrame_1.ScrollBarImageTransparency = 0
+ScrollingFrame_1.ScrollBarThickness = 12
+ScrollingFrame_1.ScrollingDirection = Enum.ScrollingDirection.XY
+ScrollingFrame_1.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+ScrollingFrame_1.VerticalScrollBarInset = Enum.ScrollBarInset.None
+ScrollingFrame_1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+ScrollingFrame_1.ClipsDescendants = false
+
+astro_1.Name = "astro"
+astro_1.Parent = ScrollingFrame_1
+astro_1.Active = true
+astro_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+astro_1.BackgroundTransparency = 0.5
+astro_1.BorderColor3 = Color3.fromRGB(0,0,0)
+astro_1.BorderSizePixel = 0
+astro_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+astro_1.Size = UDim2.new(0, 101,0, 48)
+astro_1.Font = Enum.Font.Code
+astro_1.Text = "Astronaut"
+astro_1.TextColor3 = Color3.fromRGB(255,255,255)
+astro_1.TextSize = 14
+
+UICorner_4.Parent = astro_1
+UICorner_4.CornerRadius = UDim.new(0,16)
+
+UIStroke_3.Parent = astro_1
+UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_3.Color = Color3.fromRGB(162,0,255)
+UIStroke_3.Thickness = 1
+
+UIGridLayout_1.Parent = ScrollingFrame_1
+UIGridLayout_1.CellPadding = UDim2.new(0, 20,0, 20)
+UIGridLayout_1.CellSize = UDim2.new(0, 100,0, 50)
+UIGridLayout_1.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_1.SortOrder = Enum.SortOrder.Name
+
+bubbly_1.Name = "bubbly"
+bubbly_1.Parent = ScrollingFrame_1
+bubbly_1.Active = true
+bubbly_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+bubbly_1.BackgroundTransparency = 0.5
+bubbly_1.BorderColor3 = Color3.fromRGB(0,0,0)
+bubbly_1.BorderSizePixel = 0
+bubbly_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+bubbly_1.Size = UDim2.new(0, 101,0, 48)
+bubbly_1.Font = Enum.Font.Code
+bubbly_1.Text = "Bubbly"
+bubbly_1.TextColor3 = Color3.fromRGB(255,255,255)
+bubbly_1.TextSize = 14
+
+UICorner_5.Parent = bubbly_1
+UICorner_5.CornerRadius = UDim.new(0,16)
+
+UIStroke_4.Parent = bubbly_1
+UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_4.Color = Color3.fromRGB(162,0,255)
+UIStroke_4.Thickness = 1
+
+cart_1.Name = "cart"
+cart_1.Parent = ScrollingFrame_1
+cart_1.Active = true
+cart_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+cart_1.BackgroundTransparency = 0.5
+cart_1.BorderColor3 = Color3.fromRGB(0,0,0)
+cart_1.BorderSizePixel = 0
+cart_1.Position = UDim2.new(0.682716072, 0,0, 0)
+cart_1.Size = UDim2.new(0, 101,0, 48)
+cart_1.Font = Enum.Font.Code
+cart_1.Text = "Cartoony"
+cart_1.TextColor3 = Color3.fromRGB(255,255,255)
+cart_1.TextSize = 14
+
+UICorner_6.Parent = cart_1
+UICorner_6.CornerRadius = UDim.new(0,16)
+
+UIStroke_5.Parent = cart_1
+UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_5.Color = Color3.fromRGB(162,0,255)
+UIStroke_5.Thickness = 1
+
+elder_1.Name = "elder"
+elder_1.Parent = ScrollingFrame_1
+elder_1.Active = true
+elder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+elder_1.BackgroundTransparency = 0.5
+elder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+elder_1.BorderSizePixel = 0
+elder_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+elder_1.Size = UDim2.new(0, 101,0, 48)
+elder_1.Font = Enum.Font.Code
+elder_1.Text = "Elder"
+elder_1.TextColor3 = Color3.fromRGB(255,255,255)
+elder_1.TextSize = 14
+
+UICorner_7.Parent = elder_1
+UICorner_7.CornerRadius = UDim.new(0,16)
+
+UIStroke_6.Parent = elder_1
+UIStroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_6.Color = Color3.fromRGB(162,0,255)
+UIStroke_6.Thickness = 1
+
+knight_1.Name = "knight"
+knight_1.Parent = ScrollingFrame_1
+knight_1.Active = true
+knight_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+knight_1.BackgroundTransparency = 0.5
+knight_1.BorderColor3 = Color3.fromRGB(0,0,0)
+knight_1.BorderSizePixel = 0
+knight_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+knight_1.Size = UDim2.new(0, 101,0, 48)
+knight_1.Font = Enum.Font.Code
+knight_1.Text = "Knight"
+knight_1.TextColor3 = Color3.fromRGB(255,255,255)
+knight_1.TextSize = 14
+
+UICorner_8.Parent = knight_1
+UICorner_8.CornerRadius = UDim.new(0,16)
+
+UIStroke_7.Parent = knight_1
+UIStroke_7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_7.Color = Color3.fromRGB(162,0,255)
+UIStroke_7.Thickness = 1
+
+lev_1.Name = "lev"
+lev_1.Parent = ScrollingFrame_1
+lev_1.Active = true
+lev_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+lev_1.BackgroundTransparency = 0.5
+lev_1.BorderColor3 = Color3.fromRGB(0,0,0)
+lev_1.BorderSizePixel = 0
+lev_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+lev_1.Size = UDim2.new(0, 101,0, 48)
+lev_1.Font = Enum.Font.Code
+lev_1.Text = "Levitation"
+lev_1.TextColor3 = Color3.fromRGB(255,255,255)
+lev_1.TextSize = 14
+
+UICorner_9.Parent = lev_1
+UICorner_9.CornerRadius = UDim.new(0,16)
+
+UIStroke_8.Parent = lev_1
+UIStroke_8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_8.Color = Color3.fromRGB(162,0,255)
+UIStroke_8.Thickness = 1
+
+mage_1.Name = "mage"
+mage_1.Parent = ScrollingFrame_1
+mage_1.Active = true
+mage_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+mage_1.BackgroundTransparency = 0.5
+mage_1.BorderColor3 = Color3.fromRGB(0,0,0)
+mage_1.BorderSizePixel = 0
+mage_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+mage_1.Size = UDim2.new(0, 101,0, 48)
+mage_1.Font = Enum.Font.Code
+mage_1.Text = "Mage"
+mage_1.TextColor3 = Color3.fromRGB(255,255,255)
+mage_1.TextSize = 14
+
+UICorner_10.Parent = mage_1
+UICorner_10.CornerRadius = UDim.new(0,16)
+
+UIStroke_9.Parent = mage_1
+UIStroke_9.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_9.Color = Color3.fromRGB(162,0,255)
+UIStroke_9.Thickness = 1
+
+ninja_1.Name = "ninja"
+ninja_1.Parent = ScrollingFrame_1
+ninja_1.Active = true
+ninja_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ninja_1.BackgroundTransparency = 0.5
+ninja_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ninja_1.BorderSizePixel = 0
+ninja_1.Position = UDim2.new(0.682716072, 0,0, 0)
+ninja_1.Size = UDim2.new(0, 101,0, 48)
+ninja_1.Font = Enum.Font.Code
+ninja_1.Text = "Ninja"
+ninja_1.TextColor3 = Color3.fromRGB(255,255,255)
+ninja_1.TextSize = 14
+
+UICorner_11.Parent = ninja_1
+UICorner_11.CornerRadius = UDim.new(0,16)
+
+UIStroke_10.Parent = ninja_1
+UIStroke_10.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_10.Color = Color3.fromRGB(162,0,255)
+UIStroke_10.Thickness = 1
+
+pirate_1.Name = "pirate"
+pirate_1.Parent = ScrollingFrame_1
+pirate_1.Active = true
+pirate_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+pirate_1.BackgroundTransparency = 0.5
+pirate_1.BorderColor3 = Color3.fromRGB(0,0,0)
+pirate_1.BorderSizePixel = 0
+pirate_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+pirate_1.Size = UDim2.new(0, 101,0, 48)
+pirate_1.Font = Enum.Font.Code
+pirate_1.Text = "Pirate"
+pirate_1.TextColor3 = Color3.fromRGB(255,255,255)
+pirate_1.TextSize = 14
+
+UICorner_12.Parent = pirate_1
+UICorner_12.CornerRadius = UDim.new(0,16)
+
+UIStroke_11.Parent = pirate_1
+UIStroke_11.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_11.Color = Color3.fromRGB(162,0,255)
+UIStroke_11.Thickness = 1
+
+robot_1.Name = "robot"
+robot_1.Parent = ScrollingFrame_1
+robot_1.Active = true
+robot_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+robot_1.BackgroundTransparency = 0.5
+robot_1.BorderColor3 = Color3.fromRGB(0,0,0)
+robot_1.BorderSizePixel = 0
+robot_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+robot_1.Size = UDim2.new(0, 101,0, 48)
+robot_1.Font = Enum.Font.Code
+robot_1.Text = "Robot"
+robot_1.TextColor3 = Color3.fromRGB(255,255,255)
+robot_1.TextSize = 14
+
+UICorner_13.Parent = robot_1
+UICorner_13.CornerRadius = UDim.new(0,16)
+
+UIStroke_12.Parent = robot_1
+UIStroke_12.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_12.Color = Color3.fromRGB(162,0,255)
+UIStroke_12.Thickness = 1
+
+styl_1.Name = "styl"
+styl_1.Parent = ScrollingFrame_1
+styl_1.Active = true
+styl_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+styl_1.BackgroundTransparency = 0.5
+styl_1.BorderColor3 = Color3.fromRGB(0,0,0)
+styl_1.BorderSizePixel = 0
+styl_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+styl_1.Size = UDim2.new(0, 101,0, 48)
+styl_1.Font = Enum.Font.Code
+styl_1.Text = "Stylish"
+styl_1.TextColor3 = Color3.fromRGB(255,255,255)
+styl_1.TextSize = 14
+
+UICorner_14.Parent = styl_1
+UICorner_14.CornerRadius = UDim.new(0,16)
+
+UIStroke_13.Parent = styl_1
+UIStroke_13.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_13.Color = Color3.fromRGB(162,0,255)
+UIStroke_13.Thickness = 1
+
+hero_1.Name = "hero"
+hero_1.Parent = ScrollingFrame_1
+hero_1.Active = true
+hero_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+hero_1.BackgroundTransparency = 0.5
+hero_1.BorderColor3 = Color3.fromRGB(0,0,0)
+hero_1.BorderSizePixel = 0
+hero_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+hero_1.Size = UDim2.new(0, 101,0, 48)
+hero_1.Font = Enum.Font.Code
+hero_1.Text = "Superhero"
+hero_1.TextColor3 = Color3.fromRGB(255,255,255)
+hero_1.TextSize = 14
+
+UICorner_15.Parent = hero_1
+UICorner_15.CornerRadius = UDim.new(0,16)
+
+UIStroke_14.Parent = hero_1
+UIStroke_14.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_14.Color = Color3.fromRGB(162,0,255)
+UIStroke_14.Thickness = 1
+
+patrol_1.Name = "patrol"
+patrol_1.Parent = ScrollingFrame_1
+patrol_1.Active = true
+patrol_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+patrol_1.BackgroundTransparency = 0.5
+patrol_1.BorderColor3 = Color3.fromRGB(0,0,0)
+patrol_1.BorderSizePixel = 0
+patrol_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+patrol_1.Size = UDim2.new(0, 101,0, 48)
+patrol_1.Font = Enum.Font.Code
+patrol_1.Text = "Patrol"
+patrol_1.TextColor3 = Color3.fromRGB(255,255,255)
+patrol_1.TextSize = 14
+
+UICorner_16.Parent = patrol_1
+UICorner_16.CornerRadius = UDim.new(0,16)
+
+UIStroke_15.Parent = patrol_1
+UIStroke_15.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_15.Color = Color3.fromRGB(162,0,255)
+UIStroke_15.Thickness = 1
+
+confident_1.Name = "confident"
+confident_1.Parent = ScrollingFrame_1
+confident_1.Active = true
+confident_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+confident_1.BackgroundTransparency = 0.5
+confident_1.BorderColor3 = Color3.fromRGB(0,0,0)
+confident_1.BorderSizePixel = 0
+confident_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+confident_1.Size = UDim2.new(0, 101,0, 48)
+confident_1.Font = Enum.Font.Code
+confident_1.Text = "Confident"
+confident_1.TextColor3 = Color3.fromRGB(255,255,255)
+confident_1.TextSize = 14
+
+UICorner_17.Parent = confident_1
+UICorner_17.CornerRadius = UDim.new(0,16)
+
+UIStroke_16.Parent = confident_1
+UIStroke_16.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_16.Color = Color3.fromRGB(162,0,255)
+UIStroke_16.Thickness = 1
+
+pop_1.Name = "pop"
+pop_1.Parent = ScrollingFrame_1
+pop_1.Active = true
+pop_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+pop_1.BackgroundTransparency = 0.5
+pop_1.BorderColor3 = Color3.fromRGB(0,0,0)
+pop_1.BorderSizePixel = 0
+pop_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+pop_1.Size = UDim2.new(0, 101,0, 48)
+pop_1.Font = Enum.Font.Code
+pop_1.Text = "Popstar"
+pop_1.TextColor3 = Color3.fromRGB(255,255,255)
+pop_1.TextSize = 14
+
+UICorner_18.Parent = pop_1
+UICorner_18.CornerRadius = UDim.new(0,16)
+
+UIStroke_17.Parent = pop_1
+UIStroke_17.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_17.Color = Color3.fromRGB(162,0,255)
+UIStroke_17.Thickness = 1
+
+cowboy_1.Name = "cowboy"
+cowboy_1.Parent = ScrollingFrame_1
+cowboy_1.Active = true
+cowboy_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+cowboy_1.BackgroundTransparency = 0.5
+cowboy_1.BorderColor3 = Color3.fromRGB(0,0,0)
+cowboy_1.BorderSizePixel = 0
+cowboy_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+cowboy_1.Size = UDim2.new(0, 101,0, 48)
+cowboy_1.Font = Enum.Font.Code
+cowboy_1.Text = "Cowboy"
+cowboy_1.TextColor3 = Color3.fromRGB(255,255,255)
+cowboy_1.TextSize = 14
+
+UICorner_19.Parent = cowboy_1
+UICorner_19.CornerRadius = UDim.new(0,16)
+
+UIStroke_18.Parent = cowboy_1
+UIStroke_18.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_18.Color = Color3.fromRGB(162,0,255)
+UIStroke_18.Thickness = 1
+
+ghost_1.Name = "ghost"
+ghost_1.Parent = ScrollingFrame_1
+ghost_1.Active = true
+ghost_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ghost_1.BackgroundTransparency = 0.5
+ghost_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ghost_1.BorderSizePixel = 0
+ghost_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+ghost_1.Size = UDim2.new(0, 101,0, 48)
+ghost_1.Font = Enum.Font.Code
+ghost_1.Text = "Ghost"
+ghost_1.TextColor3 = Color3.fromRGB(255,255,255)
+ghost_1.TextSize = 14
+
+UICorner_20.Parent = ghost_1
+UICorner_20.CornerRadius = UDim.new(0,16)
+
+UIStroke_19.Parent = ghost_1
+UIStroke_19.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_19.Color = Color3.fromRGB(162,0,255)
+UIStroke_19.Thickness = 1
+
+sneaky_1.Name = "sneaky"
+sneaky_1.Parent = ScrollingFrame_1
+sneaky_1.Active = true
+sneaky_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+sneaky_1.BackgroundTransparency = 0.5
+sneaky_1.BorderColor3 = Color3.fromRGB(0,0,0)
+sneaky_1.BorderSizePixel = 0
+sneaky_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+sneaky_1.Size = UDim2.new(0, 101,0, 48)
+sneaky_1.Font = Enum.Font.Code
+sneaky_1.Text = "Sneaky"
+sneaky_1.TextColor3 = Color3.fromRGB(255,255,255)
+sneaky_1.TextSize = 14
+
+UICorner_21.Parent = sneaky_1
+UICorner_21.CornerRadius = UDim.new(0,16)
+
+UIStroke_20.Parent = sneaky_1
+UIStroke_20.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_20.Color = Color3.fromRGB(162,0,255)
+UIStroke_20.Thickness = 1
+
+princess_1.Name = "princess"
+princess_1.Parent = ScrollingFrame_1
+princess_1.Active = true
+princess_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+princess_1.BackgroundTransparency = 0.5
+princess_1.BorderColor3 = Color3.fromRGB(0,0,0)
+princess_1.BorderSizePixel = 0
+princess_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+princess_1.Size = UDim2.new(0, 101,0, 48)
+princess_1.Font = Enum.Font.Code
+princess_1.RichText = true
+princess_1.Text = "Princess"
+princess_1.TextColor3 = Color3.fromRGB(255,255,255)
+princess_1.TextSize = 14
+
+UICorner_22.Parent = princess_1
+UICorner_22.CornerRadius = UDim.new(0,16)
+
+UIStroke_21.Parent = princess_1
+UIStroke_21.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_21.Color = Color3.fromRGB(162,0,255)
+UIStroke_21.Thickness = 1
+
+custom_1.Name = "custom"
+custom_1.Parent = ScrollingFrame_1
+custom_1.Active = true
+custom_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+custom_1.BackgroundTransparency = 0.5
+custom_1.BorderColor3 = Color3.fromRGB(0,0,0)
+custom_1.BorderSizePixel = 0
+custom_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+custom_1.Size = UDim2.new(0, 101,0, 48)
+custom_1.Font = Enum.Font.Code
+custom_1.Text = "Custom"
+custom_1.TextColor3 = Color3.fromRGB(255,255,255)
+custom_1.TextSize = 14
+
+UICorner_23.Parent = custom_1
+UICorner_23.CornerRadius = UDim.new(0,16)
+
+UIStroke_22.Parent = custom_1
+UIStroke_22.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_22.Color = Color3.fromRGB(162,0,255)
+UIStroke_22.Thickness = 1
+
+none_1.Name = "none"
+none_1.Parent = ScrollingFrame_1
+none_1.Active = true
+none_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+none_1.BackgroundTransparency = 0.5
+none_1.BorderColor3 = Color3.fromRGB(0,0,0)
+none_1.BorderSizePixel = 0
+none_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+none_1.Size = UDim2.new(0, 101,0, 48)
+none_1.Font = Enum.Font.Code
+none_1.Text = "None"
+none_1.TextColor3 = Color3.fromRGB(255,255,255)
+none_1.TextSize = 14
+
+UICorner_24.Parent = none_1
+UICorner_24.CornerRadius = UDim.new(0,16)
+
+UIStroke_23.Parent = none_1
+UIStroke_23.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_23.Color = Color3.fromRGB(162,0,255)
+UIStroke_23.Thickness = 1
+
+toy_1.Name = "toy"
+toy_1.Parent = ScrollingFrame_1
+toy_1.Active = true
+toy_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+toy_1.BackgroundTransparency = 0.5
+toy_1.BorderColor3 = Color3.fromRGB(0,0,0)
+toy_1.BorderSizePixel = 0
+toy_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+toy_1.Size = UDim2.new(0, 101,0, 48)
+toy_1.Font = Enum.Font.Code
+toy_1.Text = "Toy"
+toy_1.TextColor3 = Color3.fromRGB(255,255,255)
+toy_1.TextSize = 14
+
+UICorner_25.Parent = toy_1
+UICorner_25.CornerRadius = UDim.new(0,16)
+
+UIStroke_24.Parent = toy_1
+UIStroke_24.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_24.Color = Color3.fromRGB(162,0,255)
+UIStroke_24.Thickness = 1
+
+vampire_1.Name = "vampire"
+vampire_1.Parent = ScrollingFrame_1
+vampire_1.Active = true
+vampire_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+vampire_1.BackgroundTransparency = 0.5
+vampire_1.BorderColor3 = Color3.fromRGB(0,0,0)
+vampire_1.BorderSizePixel = 0
+vampire_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+vampire_1.Size = UDim2.new(0, 101,0, 48)
+vampire_1.Font = Enum.Font.Code
+vampire_1.Text = "Vampire"
+vampire_1.TextColor3 = Color3.fromRGB(255,255,255)
+vampire_1.TextSize = 14
+
+UICorner_26.Parent = vampire_1
+UICorner_26.CornerRadius = UDim.new(0,16)
+
+UIStroke_25.Parent = vampire_1
+UIStroke_25.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_25.Color = Color3.fromRGB(162,0,255)
+UIStroke_25.Thickness = 1
+
+Werewolf_1.Name = "Werewolf"
+Werewolf_1.Parent = ScrollingFrame_1
+Werewolf_1.Active = true
+Werewolf_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Werewolf_1.BackgroundTransparency = 0.5
+Werewolf_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Werewolf_1.BorderSizePixel = 0
+Werewolf_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+Werewolf_1.Size = UDim2.new(0, 101,0, 48)
+Werewolf_1.Font = Enum.Font.Code
+Werewolf_1.Text = "Werewolf"
+Werewolf_1.TextColor3 = Color3.fromRGB(255,255,255)
+Werewolf_1.TextSize = 14
+
+UICorner_27.Parent = Werewolf_1
+UICorner_27.CornerRadius = UDim.new(0,16)
+
+UIStroke_26.Parent = Werewolf_1
+UIStroke_26.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_26.Color = Color3.fromRGB(162,0,255)
+UIStroke_26.Thickness = 1
+
+zombie_1.Name = "zombie"
+zombie_1.Parent = ScrollingFrame_1
+zombie_1.Active = true
+zombie_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+zombie_1.BackgroundTransparency = 0.5
+zombie_1.BorderColor3 = Color3.fromRGB(0,0,0)
+zombie_1.BorderSizePixel = 0
+zombie_1.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+zombie_1.Size = UDim2.new(0, 101,0, 48)
+zombie_1.Font = Enum.Font.Code
+zombie_1.Text = "Zombie"
+zombie_1.TextColor3 = Color3.fromRGB(255,255,255)
+zombie_1.TextSize = 14
+
+UICorner_28.Parent = zombie_1
+UICorner_28.CornerRadius = UDim.new(0,16)
+
+UIStroke_27.Parent = zombie_1
+UIStroke_27.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_27.Color = Color3.fromRGB(162,0,255)
+UIStroke_27.Thickness = 1
+
+auto_1.Name = "auto"
+auto_1.Parent = changer_1
+auto_1.Active = true
+auto_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+auto_1.BackgroundTransparency = 1
+auto_1.BorderColor3 = Color3.fromRGB(0,0,0)
+auto_1.BorderSizePixel = 0
+auto_1.Position = UDim2.new(0.351177722, 0,0.843356073, 0)
+auto_1.Size = UDim2.new(0, 138,0, 35)
+auto_1.Font = Enum.Font.SourceSans
+auto_1.Text = "Toggle AutoAnimate"
+auto_1.TextColor3 = Color3.fromRGB(255,255,255)
+auto_1.TextSize = 14
+
+UICorner_29.Parent = auto_1
+UICorner_29.CornerRadius = UDim.new(0,16)
+
+UIStroke_28.Parent = auto_1
+UIStroke_28.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_28.Color = Color3.fromRGB(162,0,255)
+UIStroke_28.Thickness = 1
+
+current_1.Name = "current"
+current_1.Parent = changer_1
+current_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+current_1.BackgroundTransparency = 1
+current_1.BorderColor3 = Color3.fromRGB(0,0,0)
+current_1.BorderSizePixel = 0
+current_1.Position = UDim2.new(0.0278372597, 0,0.843356073, 0)
+current_1.Size = UDim2.new(0, 150,0, 34)
+current_1.Font = Enum.Font.Code
+current_1.Text = "Current Animation: Default"
+current_1.TextColor3 = Color3.fromRGB(255,255,255)
+current_1.TextSize = 14
+current_1.TextWrapped = true
+current_1.TextScaled = true
+current_1.TextXAlignment = Enum.TextXAlignment.Left
+
+state_1.Name = "state"
+state_1.Parent = changer_1
+state_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+state_1.BackgroundTransparency = 1
+state_1.BorderColor3 = Color3.fromRGB(0,0,0)
+state_1.BorderSizePixel = 0
+state_1.Position = UDim2.new(0.649999976, 0,0.842999995, 0)
+state_1.Size = UDim2.new(0, 150,0, 34)
+state_1.Font = Enum.Font.Code
+state_1.Text = "Current State: off"
+state_1.TextColor3 = Color3.fromRGB(255,255,255)
+state_1.TextSize = 14
+state_1.TextWrapped = true
+state_1.TextScaled = true
+state_1.TextXAlignment = Enum.TextXAlignment.Right
+
+open_custom_menu_1.Name = "open_custom_menu"
+open_custom_menu_1.Parent = changer_1
+open_custom_menu_1.Active = true
+open_custom_menu_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+open_custom_menu_1.BackgroundTransparency = 1
+open_custom_menu_1.BorderColor3 = Color3.fromRGB(0,0,0)
+open_custom_menu_1.BorderSizePixel = 0
+open_custom_menu_1.Position = UDim2.new(0.0278372597, 0,0.159322038, 0)
+open_custom_menu_1.Size = UDim2.new(0, 30,0, 30)
+open_custom_menu_1.Image = "rbxassetid://97889814027474"
+open_custom_menu_1.ImageColor3 = Color3.fromRGB(244,119,255)
+
+local tweenservice = game:GetService("TweenService")
+local info_1 = TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out)
+local cm_opened = false
+
+custom_menu_1.Name = "custom_menu"
+custom_menu_1.Parent = main_1
+custom_menu_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+custom_menu_1.BackgroundTransparency = 0.20000000298023224
+custom_menu_1.BorderColor3 = Color3.fromRGB(0,0,0)
+custom_menu_1.BorderSizePixel = 0
+custom_menu_1.Position = UDim2.new(0.03, 0, 0.05, 0)
+custom_menu_1.Size = UDim2.new(0, 171,0, 295)
+custom_menu_1.ZIndex = 0
+custom_menu_1.Visible = false
+
+local dragd = Instance.new("UIDragDetector", custom_menu_1)
+dragd.DragStyle = Enum.UIDragDetectorDragStyle.TranslatePlane
+
+open_custom_menu_1.MouseButton1Click:Connect(function()
+	if cm_opened == false then
+		cm_opened = true
+		custom_menu_1.Visible = true
+	else
+		cm_opened = false
+		custom_menu_1.Visible = false
+	end
+end)
+
+mini_1.MouseButton1Click:Connect(function()
+	if ac_opened == true then
+		ac_opened = false
+		cm_opened = false
+		changer_1.Size = UDim2.new(0, 467, 0, 28)
+		mini_1.Position = UDim2.new(0.931, 0 , 0.156, 0)
+		custom_menu_1.Visible = false
+		anims_1.Visible = false
+		open_custom_menu_1.Visible = false
+		current_1.Visible = false
+		state_1.Visible = false
+		auto_1.Visible = false
+	else
+		ac_opened = true
+		changer_1.Size = UDim2.new(0, 467,0, 295)
+		mini_1.Position = UDim2.new(0.931477487, 0,0.0135593219, 0)
+		anims_1.Visible = true
+		open_custom_menu_1.Visible = true
+		current_1.Visible = true
+		state_1.Visible = true
+		auto_1.Visible = true
+	end
+end)
+
+
+UICorner_30.Parent = custom_menu_1
+UICorner_30.CornerRadius = UDim.new(0,10)
+
+UIGradient_2.Parent = custom_menu_1
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(140, 0, 255))}
+UIGradient_2.Offset = Vector2.new(0, 0.5)
+UIGradient_2.Rotation = 36
+
+UIStroke_29.Parent = custom_menu_1
+UIStroke_29.Color = Color3.fromRGB(162,0,255)
+UIStroke_29.Thickness = 2.9000000953674316
+
+label_2.Name = "label"
+label_2.Parent = custom_menu_1
+label_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+label_2.BackgroundTransparency = 1
+label_2.BorderColor3 = Color3.fromRGB(0,0,0)
+label_2.BorderSizePixel = 0
+label_2.Position = UDim2.new(0.0724796057, 0,0.00338983047, 0)
+label_2.Size = UDim2.new(0, 396,0, 27)
+label_2.Font = Enum.Font.SourceSans
+label_2.Text = "Custom Animation"
+label_2.TextColor3 = Color3.fromRGB(255,255,255)
+label_2.TextSize = 14
+label_2.TextXAlignment = Enum.TextXAlignment.Left
+
+div_2.Name = "div"
+div_2.Parent = custom_menu_1
+div_2.BackgroundColor3 = Color3.fromRGB(31,0,43)
+div_2.BackgroundTransparency = 0.800000011920929
+div_2.BorderColor3 = Color3.fromRGB(0,0,0)
+div_2.BorderSizePixel = 0
+div_2.Position = UDim2.new(0, 0,-0.00338983047, 0)
+div_2.Size = UDim2.new(0, 171,0, 28)
+div_2.ClipsDescendants = true
+
+UICorner_31.Parent = div_2
+
+Frame_1.Parent = custom_menu_1
+Frame_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Frame_1.BackgroundTransparency = 1
+Frame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+Frame_1.BorderSizePixel = 0
+Frame_1.Position = UDim2.new(0.0701754391, 0,0.128813565, 0)
+Frame_1.Size = UDim2.new(0, 147,0, 244)
+
+UIListLayout_1.Parent = Frame_1
+UIListLayout_1.Padding = UDim.new(0,13)
+UIListLayout_1.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+
+idle1_1.Name = "idle1"
+idle1_1.Parent = Frame_1
+idle1_1.Active = true
+idle1_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+idle1_1.BackgroundTransparency = 0.800000011920929
+idle1_1.BorderColor3 = Color3.fromRGB(0,0,0)
+idle1_1.BorderSizePixel = 0
+idle1_1.CursorPosition = -1
+idle1_1.Position = UDim2.new(0.0680272132, 0,0, 0)
+idle1_1.Size = UDim2.new(0, 127,0, 23)
+idle1_1.Font = Enum.Font.Code
+idle1_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+idle1_1.PlaceholderText = "Idle1"
+idle1_1.Text = ""
+idle1_1.TextSize = 14
+
+UICorner_32.Parent = idle1_1
+UICorner_32.CornerRadius = UDim.new(0,16)
+
+UIStroke_30.Parent = idle1_1
+UIStroke_30.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_30.Color = Color3.fromRGB(162,0,255)
+UIStroke_30.Thickness = 1
+
+idle2_1.Name = "idle2"
+idle2_1.Parent = Frame_1
+idle2_1.Active = true
+idle2_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+idle2_1.BackgroundTransparency = 0.800000011920929
+idle2_1.BorderColor3 = Color3.fromRGB(0,0,0)
+idle2_1.BorderSizePixel = 0
+idle2_1.CursorPosition = -1
+idle2_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+idle2_1.Size = UDim2.new(0, 127,0, 23)
+idle2_1.Font = Enum.Font.Code
+idle2_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+idle2_1.PlaceholderText = "Idle2"
+idle2_1.Text = ""
+idle2_1.TextSize = 14
+
+UICorner_33.Parent = idle2_1
+UICorner_33.CornerRadius = UDim.new(0,16)
+
+UIStroke_31.Parent = idle2_1
+UIStroke_31.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_31.Color = Color3.fromRGB(162,0,255)
+UIStroke_31.Thickness = 1
+
+walk_1.Name = "walk"
+walk_1.Parent = Frame_1
+walk_1.Active = true
+walk_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+walk_1.BackgroundTransparency = 0.800000011920929
+walk_1.BorderColor3 = Color3.fromRGB(0,0,0)
+walk_1.BorderSizePixel = 0
+walk_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+walk_1.Size = UDim2.new(0, 127,0, 23)
+walk_1.Font = Enum.Font.Code
+walk_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+walk_1.PlaceholderText = "Walk"
+walk_1.Text = ""
+walk_1.TextSize = 14
+
+UICorner_34.Parent = walk_1
+UICorner_34.CornerRadius = UDim.new(0,16)
+
+UIStroke_32.Parent = walk_1
+UIStroke_32.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_32.Color = Color3.fromRGB(162,0,255)
+UIStroke_32.Thickness = 1
+
+run_1.Name = "run"
+run_1.Parent = Frame_1
+run_1.Active = true
+run_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+run_1.BackgroundTransparency = 0.800000011920929
+run_1.BorderColor3 = Color3.fromRGB(0,0,0)
+run_1.BorderSizePixel = 0
+run_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+run_1.Size = UDim2.new(0, 127,0, 23)
+run_1.Font = Enum.Font.Code
+run_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+run_1.PlaceholderText = "Run"
+run_1.Text = ""
+run_1.TextSize = 14
+
+UICorner_35.Parent = run_1
+UICorner_35.CornerRadius = UDim.new(0,16)
+
+UIStroke_33.Parent = run_1
+UIStroke_33.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_33.Color = Color3.fromRGB(162,0,255)
+UIStroke_33.Thickness = 1
+
+jump_1.Name = "jump"
+jump_1.Parent = Frame_1
+jump_1.Active = true
+jump_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+jump_1.BackgroundTransparency = 0.800000011920929
+jump_1.BorderColor3 = Color3.fromRGB(0,0,0)
+jump_1.BorderSizePixel = 0
+jump_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+jump_1.Size = UDim2.new(0, 127,0, 23)
+jump_1.Font = Enum.Font.Code
+jump_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+jump_1.PlaceholderText = "Jump"
+jump_1.Text = ""
+jump_1.TextSize = 14
+
+UICorner_36.Parent = jump_1
+UICorner_36.CornerRadius = UDim.new(0,16)
+
+UIStroke_34.Parent = jump_1
+UIStroke_34.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_34.Color = Color3.fromRGB(162,0,255)
+UIStroke_34.Thickness = 1
+
+climb_1.Name = "climb"
+climb_1.Parent = Frame_1
+climb_1.Active = true
+climb_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+climb_1.BackgroundTransparency = 0.800000011920929
+climb_1.BorderColor3 = Color3.fromRGB(0,0,0)
+climb_1.BorderSizePixel = 0
+climb_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+climb_1.Size = UDim2.new(0, 127,0, 23)
+climb_1.Font = Enum.Font.Code
+climb_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+climb_1.PlaceholderText = "Climb"
+climb_1.Text = ""
+climb_1.TextSize = 14
+
+UICorner_37.Parent = climb_1
+UICorner_37.CornerRadius = UDim.new(0,16)
+
+UIStroke_35.Parent = climb_1
+UIStroke_35.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_35.Color = Color3.fromRGB(162,0,255)
+UIStroke_35.Thickness = 1
+
+fall_1.Name = "fall"
+fall_1.Parent = Frame_1
+fall_1.Active = true
+fall_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+fall_1.BackgroundTransparency = 0.800000011920929
+fall_1.BorderColor3 = Color3.fromRGB(0,0,0)
+fall_1.BorderSizePixel = 0
+fall_1.Position = UDim2.new(0, 0,0.0354330726, 0)
+fall_1.Size = UDim2.new(0, 127,0, 23)
+fall_1.Font = Enum.Font.Code
+fall_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+fall_1.PlaceholderText = "Fall"
+fall_1.Text = ""
+fall_1.TextSize = 14
+
+UICorner_38.Parent = fall_1
+UICorner_38.CornerRadius = UDim.new(0,16)
+
+UIStroke_36.Parent = fall_1
+UIStroke_36.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_36.Color = Color3.fromRGB(162,0,255)
+UIStroke_36.Thickness = 1
+
+main_1.Draggable = true
+
+auto_1.MouseButton1Click:Connect(function()
+	if aa == false then
+		state_1.Text = 'Current State: on'
+		aa = true
+	else
+		aa = false
+		state_1.Text = 'Current State: off'
+	end
+end)
+
+astro_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Astronaut'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Astronaut'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+end)
+
+bubbly_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Bubbly'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Bubbly'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+	Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+	Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+end)
+
+cart_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Cartoony'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Cartoony'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+end)
+
+elder_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Elder'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Elder'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+end)
+
+knight_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Knight'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Knight'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
+end)
+
+lev_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Levitation'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Levitation'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+end)
+
+mage_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Mage'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Mage'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+end)
+
+ninja_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Ninja'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Ninja'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+end)
+
+pirate_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Pirate'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Pirate'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+end)
+
+robot_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Robot'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Robot'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
+end)
+
+styl_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Stylish'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Stylish'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+end)
+
+hero_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Superhero'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Superhero'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+end)
+
+toy_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Toy'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Toy'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+end)
+
+vampire_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Vampire'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Vampire'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+end)
+
+Werewolf_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Werewolf'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Werewolf'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+end)
+
+zombie_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Zombie'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Zombie'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+end)
+
+patrol_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Patrol'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Patrol'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1149612882"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1151231493"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1150967949"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1148863382"
+end)
+
+confident_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Confident'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Confident'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1069977950"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1069987858"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1070017263"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1070001516"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1069984524"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1069946257"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1069973677"
+end)
+
+pop_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Popstar'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Popstar'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1212900985"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980338"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980348"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1212954642"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1213044953"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1212900995"
+end)
+
+cowboy_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Cowboy'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Cowboy'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1014390418"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1014398616"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1014421541"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1014401683"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014394726"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1014380606"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1014384571"
+end)
+
+ghost_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Ghost'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Ghost'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+	Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616012453"
+	Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616011509"
+end)
+
+sneaky_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Sneaky'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Sneaky'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+end)
+
+princess_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Princess'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Princess'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=941003647"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=941013098"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=941028902"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=941015281"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
+end)
+
+custom_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Custom'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'Custom'
+	local cidle = idle1_1.Text
+	local cidle2 = idle2_1.Text
+	local cwalk = walk_1.Text
+	local crun = run_1.Text
+	local cjump = jump_1.Text
+	local cclimb = climb_1.Text
+	local cfall = fall_1.Text
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..cidle
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id="..cidle2
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id="..cwalk
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id="..crun
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id="..cjump
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id="..cclimb
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id="..cfall
+end)
+
+none_1.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: None'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'None'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+end)
+
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+	wait(1)
+  --print("loaded "..currentAnim)
+  --print(aa)
+	if aa == true then
+		if currentAnim == 'Astronaut' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+		elseif currentAnim == 'Bubbly' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+			Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+			Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+		elseif currentAnim == 'Cartoony' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+		elseif currentAnim == 'Elder' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+		elseif currentAnim == "Knight" then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
+		elseif currentAnim == 'Levitation' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+		elseif currentAnim == 'Mage' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+		elseif currentAnim == 'Ninja' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+		elseif currentAnim == 'Pirate' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+		elseif currentAnim == 'Robot' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
+		elseif currentAnim == 'Stylish' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+		elseif currentAnim == 'Superhero' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+		elseif currentAnim == 'Toy' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+		elseif currentAnim == 'Vampire' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+		elseif currentAnim == 'Werewolf' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+		elseif currentAnim == 'Zombie' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+		elseif currentAnim == 'Patrol' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1149612882"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1151231493"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1150967949"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1148863382"
+		elseif currentAnim == 'Confident' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1069977950"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1069987858"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1070017263"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1070001516"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1069984524"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1069946257"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1069973677"
+		elseif currentAnim == 'Popstar' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1212900985"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980338"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980348"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1212954642"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1213044953"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1212900995"
+		elseif currentAnim == 'Cowboy' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1014390418"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1014398616"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1014421541"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1014401683"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014394726"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1014380606"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1014384571"
+		elseif currentAnim == 'Ghost' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+			Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616012453"
+			Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616011509"
+		elseif currentAnim == 'Sneaky' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+		elseif currentAnim == 'Princess' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=941003647"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=941013098"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=941028902"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=941015281"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
+		elseif currentAnim == 'Custom' then
+			local cidle = idle1_1.Text
+			local cidle2 = idle2_1.Text
+			local cwalk = walk_1.Text
+			local crun = run_1.Text
+			local cjump = jump_1.Text
+			local cclimb = climb_1.Text
+			local cfall = fall_1.Text
+			if cidle == nil or cidle == '' then
+				cidle = 0
+			elseif cidle2 == nil or cidle2 == '' then
+				cidle2 = 0
+			elseif cwalk == nil or cidle2 == '' then
+				cwalk = 0
+			elseif crun == nil or crun == '' then
+				crun = 0
+			elseif cjump == nil or cjump == '' then
+				cjump = 0
+			elseif cclimb == nil or cclimb == '' then
+				cclimb = 0
+			elseif cfall == nil or cfall == '' then
+				cfall = 0
+			end
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id="..cidle
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id="..cidle2
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id="..cwalk
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id="..crun
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id="..cjump
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id="..cclimb
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id="..cfall
+		elseif currentAnim == 'None' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		end
+	end
+end)
