@@ -1544,8 +1544,8 @@ end)
 
 game.Players.LocalPlayer.CharacterAdded:Connect(function()
 	wait(1)
-  --print("loaded "..currentAnim)
-  --print(aa)
+	--print("loaded "..currentAnim)
+	--print(aa)
 	if aa == true then
 		if currentAnim == 'Astronaut' then
 			Animate = game.Players.LocalPlayer.Character.Animate
