@@ -93,6 +93,24 @@ local UIStroke_26 = Instance.new("UIStroke")
 local zombie_1 = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
 local UIStroke_27 = Instance.new("UIStroke")
+local adidas = Instance.new("TextButton")
+local UICorner_ad = Instance.new("UICorner")
+local UIStroke_ad = Instance.new("UIStroke")
+local wicked = Instance.new("TextButton")
+local UICorner_wk = Instance.new("UICorner")
+local UIStroke_wk = Instance.new("UIStroke")
+local nfl = Instance.new("TextButton")
+local UICorner_nfl = Instance.new("UICorner")
+local UIStroke_nfl = Instance.new("UIStroke")
+local bold = Instance.new("TextButton")
+local UICorner_bd = Instance.new("UICorner")
+local UIStroke_bd = Instance.new("UIStroke")
+local nobound = Instance.new("TextButton")
+local UICorner_nb = Instance.new("UICorner")
+local UIStroke_nb = Instance.new("UIStroke")
+local oldschool = Instance.new("TextButton")
+local UICorner_os = Instance.new("UICorner")
+local UIStroke_os = Instance.new("UIStroke")
 local auto_1 = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
 local UIStroke_28 = Instance.new("UIStroke")
@@ -243,7 +261,7 @@ ScrollingFrame_1.Size = UDim2.new(0, 405,0, 174)
 ScrollingFrame_1.AutomaticCanvasSize = Enum.AutomaticSize.None
 ScrollingFrame_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
 ScrollingFrame_1.CanvasPosition = Vector2.new(0, 0)
-ScrollingFrame_1.CanvasSize = UDim2.new(0, 0,3.1099999, 0)
+ScrollingFrame_1.CanvasSize = UDim2.new(0, 0,3.5, 0)
 ScrollingFrame_1.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
 ScrollingFrame_1.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 ScrollingFrame_1.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
@@ -805,6 +823,50 @@ zombie_1.Text = "Zombie"
 zombie_1.TextColor3 = Color3.fromRGB(255,255,255)
 zombie_1.TextSize = 14
 
+adidas.Name = 'adidas'
+adidas.Parent = ScrollingFrame_1
+adidas.Active = true
+adidas.BackgroundColor3 = Color3.fromRGB(0,0,0)
+adidas.BackgroundTransparency = 0.5
+adidas.BorderColor3 = Color3.fromRGB(0,0,0)
+adidas.BorderSizePixel = 0
+adidas.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+adidas.Size = UDim2.new(0, 101,0, 48)
+adidas.Font = Enum.Font.Code
+adidas.Text = "adidas Sports"
+adidas.TextColor3 = Color3.fromRGB(255,255,255)
+adidas.TextSize = 14
+
+wicked.Name = 'wicked'
+wicked.Parent = ScrollingFrame_1
+wicked.Active = true
+wicked.BackgroundColor3 = Color3.fromRGB(0,0,0)
+wicked.BackgroundTransparency = 0.5
+wicked.BorderColor3 = Color3.fromRGB(0,0,0)
+wicked.BorderSizePixel = 0
+wicked.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+wicked.Size = UDim2.new(0, 101,0, 48)
+wicked.Font = Enum.Font.Code
+wicked.Text = "Wicked Popular"
+wicked.TextColor3 = Color3.fromRGB(255,255,255)
+wicked.TextSize = 14
+
+UICorner_wk.Parent = wicked
+UICorner_wk.CornerRadius = UDim.new(0, 16)
+
+UIStroke_wk.Parent = wicked
+UIStroke_wk.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_wk.Color = Color3.fromRGB(162,0,255)
+UIStroke_wk.Thickness = 1
+
+UICorner_ad.Parent = adidas
+UICorner_ad.CornerRadius = UDim.new(0, 16)
+
+UIStroke_ad.Parent = adidas
+UIStroke_ad.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_ad.Color = Color3.fromRGB(162,0,255)
+UIStroke_ad.Thickness = 1
+
 UICorner_28.Parent = zombie_1
 UICorner_28.CornerRadius = UDim.new(0,16)
 
@@ -812,6 +874,94 @@ UIStroke_27.Parent = zombie_1
 UIStroke_27.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke_27.Color = Color3.fromRGB(162,0,255)
 UIStroke_27.Thickness = 1
+
+nfl.Name = 'nfl'
+nfl.Parent = ScrollingFrame_1
+nfl.Active = true
+nfl.BackgroundColor3 = Color3.fromRGB(0,0,0)
+nfl.BackgroundTransparency = 0.5
+nfl.BorderColor3 = Color3.fromRGB(0,0,0)
+nfl.BorderSizePixel = 0
+nfl.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+nfl.Size = UDim2.new(0, 101,0, 48)
+nfl.Font = Enum.Font.Code
+nfl.Text = "NFL"
+nfl.TextColor3 = Color3.fromRGB(255,255,255)
+nfl.TextSize = 14
+
+UICorner_nfl.Parent = nfl
+UICorner_nfl.CornerRadius = UDim.new(0, 16)
+
+UIStroke_nfl.Parent = nfl
+UIStroke_nfl.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_nfl.Color = Color3.fromRGB(162,0,255)
+UIStroke_nfl.Thickness = 1
+
+bold.Name = 'bold'
+bold.Parent = ScrollingFrame_1
+bold.Active = true
+bold.BackgroundColor3 = Color3.fromRGB(0,0,0)
+bold.BackgroundTransparency = 0.5
+bold.BorderColor3 = Color3.fromRGB(0,0,0)
+bold.BorderSizePixel = 0
+bold.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+bold.Size = UDim2.new(0, 101,0, 48)
+bold.Font = Enum.Font.Code
+bold.Text = "Bold"
+bold.TextColor3 = Color3.fromRGB(255,255,255)
+bold.TextSize = 14
+
+UICorner_bd.Parent = bold
+UICorner_bd.CornerRadius = UDim.new(0, 16)
+
+UIStroke_bd.Parent = bold
+UIStroke_bd.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_bd.Color = Color3.fromRGB(162,0,255)
+UIStroke_bd.Thickness = 1
+
+nobound.Name = 'nobound'
+nobound.Parent = ScrollingFrame_1
+nobound.Active = true
+nobound.BackgroundColor3 = Color3.fromRGB(0,0,0)
+nobound.BackgroundTransparency = 0.5
+nobound.BorderColor3 = Color3.fromRGB(0,0,0)
+nobound.BorderSizePixel = 0
+nobound.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+nobound.Size = UDim2.new(0, 101,0, 48)
+nobound.Font = Enum.Font.Code
+nobound.Text = "No Boundaries"
+nobound.TextColor3 = Color3.fromRGB(255,255,255)
+nobound.TextSize = 14
+
+UICorner_nb.Parent = nobound
+UICorner_nb.CornerRadius = UDim.new(0, 16)
+
+UIStroke_nb.Parent = nobound
+UIStroke_nb.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_nb.Color = Color3.fromRGB(162,0,255)
+UIStroke_nb.Thickness = 1
+
+oldschool.Name = 'oldschool'
+oldschool.Parent = ScrollingFrame_1
+oldschool.Active = true
+oldschool.BackgroundColor3 = Color3.fromRGB(0,0,0)
+oldschool.BackgroundTransparency = 0.5
+oldschool.BorderColor3 = Color3.fromRGB(0,0,0)
+oldschool.BorderSizePixel = 0
+oldschool.Position = UDim2.new(0.0370370373, 0,0.0378810838, 0)
+oldschool.Size = UDim2.new(0, 101,0, 48)
+oldschool.Font = Enum.Font.Code
+oldschool.Text = "Oldschool"
+oldschool.TextColor3 = Color3.fromRGB(255,255,255)
+oldschool.TextSize = 14
+
+UICorner_os.Parent = oldschool
+UICorner_os.CornerRadius = UDim.new(0, 16)
+
+UIStroke_os.Parent = oldschool
+UIStroke_os.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke_os.Color = Color3.fromRGB(162,0,255)
+UIStroke_os.Thickness = 1
 
 auto_1.Name = "auto"
 auto_1.Parent = changer_1
@@ -1542,10 +1692,99 @@ none_1.MouseButton1Click:Connect(function()
 	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
 end)
 
+adidas.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: adidas Sports'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'adidas'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18537376492"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18537371272"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=18537392113"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=18537384940"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18537380791"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=18537363391"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18537367238"
+end)
+
+wicked.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Wicked Popular'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'wicked'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=118832222982049"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=76049494037641"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=92072849924640"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=72301599441680"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=104325245285198"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=131326830509784"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=121152442762481"
+end)
+
+nfl.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: NFL'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'nfl'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=92080889861410"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=74451233229259"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=110358958299415"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=117333533048078"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=119846112151352"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=134630013742019"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=129773241321032"
+end)
+
+bold.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Bold'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'bold'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=16738333868"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=16738334710"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=16738340646"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=16738337225"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=16738336650"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=16738332169"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=16738333171"
+end)
+
+nobound.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: No Boundaries'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'nobound'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18747067405"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18747063918"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=18747074203"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=18747070484"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18747069148"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=18747060903"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18747062535"
+end)
+
+oldschool.MouseButton1Click:Connect(function()
+	current_1.Text = 'Current Animation: Oldschool'
+	state_1.Text = 'Current State: off'
+	aa = false
+	currentAnim = 'oldschool'
+	Animate = game.Players.LocalPlayer.Character.Animate
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=10921230744"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=10921232093"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=10921244891"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921240218"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=10921242013"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=10921229866"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=10921241244"
+end)
+
 game.Players.LocalPlayer.CharacterAdded:Connect(function()
 	wait(1)
-	--print("loaded "..currentAnim)
-	--print(aa)
+	game.Players.LocalPlayer.Character.Humanoid.Jump = true
 	if aa == true then
 		if currentAnim == 'Astronaut' then
 			Animate = game.Players.LocalPlayer.Character.Animate
@@ -1796,6 +2035,60 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function()
 			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
 			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
 			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		elseif currentAnim == 'adidas' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18537376492"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18537371272"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=18537392113"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=18537384940"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18537380791"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=18537363391"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18537367238"
+		elseif currentAnim == 'wicked' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=118832222982049"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=76049494037641"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=92072849924640"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=72301599441680"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=104325245285198"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=131326830509784"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=121152442762481"
+		elseif currentAnim == 'nfl' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=92080889861410"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=74451233229259"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=110358958299415"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=117333533048078"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=119846112151352"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=134630013742019"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=129773241321032"
+		elseif currentAnim == 'bold' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=16738333868"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=16738334710"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=16738340646"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=16738337225"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=16738336650"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=16738332169"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=16738333171"
+		elseif currentAnim == 'nobound' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18747067405"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18747063918"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=18747074203"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=18747070484"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18747069148"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=18747060903"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18747062535"
+		elseif currentAnim == 'oldschool' then
+			Animate = game.Players.LocalPlayer.Character.Animate
+			Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=10921230744"
+			Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=10921232093"
+			Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=10921244891"
+			Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921240218"
+			Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=10921242013"
+			Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=10921229866"
+			Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=10921241244"
 		end
 	end
 end)
